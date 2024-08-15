@@ -113,7 +113,7 @@ let subscriptions = [
   let subscriptionList = function(array){
       return array.reduce(function(acc, sub) {
         //get number to correct decimal place then use reduce to fomat answer with only name amd price..
-        return acc + sub.name + ' - ' + sub.costPerMonth.toFixed(2) + '\n';
+        return acc + sub.name + ' - ' + sub.costPerMonth + '\n';
       }, '');
     
   };
